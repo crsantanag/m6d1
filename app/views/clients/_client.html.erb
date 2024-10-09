@@ -1,0 +1,10 @@
+<div id="<%= dom_id client %>">
+  <tr class="table-light">
+    <th class="text-start" scope="row"> <%= client.id %> </th>
+    <td class="text-start"> <%= client.name %> </td>
+    <td class="text-start"> <%= client.age %> </td>
+    <td class="text-start"> <%= client.movies.last%> </td>
+    <td><div class="d-flex justify-content-center"> <%= link_to "Ver",   client, class: "col-8 btn btn-success" %> </div></td>
+  </tr>
+</div>
+

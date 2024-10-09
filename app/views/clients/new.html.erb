@@ -1,0 +1,13 @@
+<% content_for :title, "New client" %>
+
+<%= render "shared/navbar_client" %>
+
+<h3>Ingrese datos</h3>
+
+<%= render "form", client: @client %>
+
+<br>
+
+<div class="d-flex align-items-center">
+  <%= link_to "Regresar", clients_path, class: "col-1 p-2 mr-2 btn btn-light border" %>
+</div>

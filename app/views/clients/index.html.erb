@@ -1,0 +1,34 @@
+
+<% content_for :title, "Clients" %>
+
+<%= render "shared/navbar_client" %>
+
+  <div id="clients">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped bg-dark text-white">
+        <thead>
+          <tr class="table-success">
+            <th scope="col-1">#</th>
+            <th scope="col-5">Nombre</th>
+            <th scope="col-5">Edad</th>
+            <th scope="col-1">Película arrendada</th>
+            <th class="col-1 text-center" scope="col">ACCIÓN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @clients.each do |client| %>
+            <%= render client %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="pagination pagination-lg justify-content-center">
+        
+        <%== pagy_custom_bootstrap_nav(@pagy) %>
+      </ul>
+    </nav>
+
+  </div>
+</div>

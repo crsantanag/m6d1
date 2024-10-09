@@ -1,0 +1,51 @@
+
+  <%= render "shared/navbar_client" %>
+
+  <div class="text-left border rounded-2">
+
+    <div class="row ps-2">
+      <div class="col-2">
+        Id
+      </div>
+      <div class="col-1">
+        <%= @client.id %>
+      </div>
+    </div>
+
+    <div class="row ps-2">
+      <div class="col-2">
+        Nombre
+      </div>
+      <div class="col-6">
+        <%= @client.name %>
+      </div>
+    </div>
+
+    <div class="row ps-2">
+      <div class="col-2">
+        Edad
+      </div>
+      <div class="col-6">
+        <%= @client.age %>
+      </div>
+    </div>
+
+    <div class="row ps-2">
+      <div class="col-2">
+        Película arrendada
+      </div>
+      <div class="col-6">
+        <%= @client.movies.last %>
+      </div>
+    </div>
+  
+  </div>
+  <br>
+
+  <div class="d-flex align-items-center">
+    <%= link_to   "Regresar", clients_path,              class: "col-3 col-md-1 py-2 mr-3 btn btn-light border" %>
+    <%= link_to   "Editar",   edit_client_path(@client), class: "col-3 col-md-1 py-2 mx-2 btn btn-success" %>
+    <%= button_to "Eliminar", @client, method: :delete, data: { confirm: "¿Estás seguro?" }, class: "col-3 col-md-1 py-2 btn btn-danger", style:"width: 120px" %>
+  </div>
+
+</div>

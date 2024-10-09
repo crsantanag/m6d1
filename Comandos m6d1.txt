@@ -1,0 +1,116 @@
+Comandos m6d1
+1. Se cambió la versión de Ruby a 3.3.5
+2. Se borra gem "faker", "~> 2.23" y se 
+Se ejecuta:
+rbenv local 3.3.5
+bundle install
+
+csantana@Carlos-ASUS:~/ruby/m6d1$ bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Using rake 13.0.6
+Using concurrent-ruby 1.1.10
+Using minitest 5.16.3
+Using builder 3.2.4
+Using erubi 1.11.0
+Using mini_portile2 2.8.7
+Using bundler 2.3.24
+Using crass 1.0.6
+Using rack 2.2.4
+Using nio4r 2.5.8
+Using websocket-extensions 0.1.5
+Using marcel 1.0.2
+Using mini_mime 1.1.2
+Using timeout 0.3.0
+Using public_suffix 5.0.0
+Using bindex 0.8.1
+Using msgpack 1.6.0
+Using racc 1.6.0
+Using matrix 0.4.2
+Using regexp_parser 2.6.0
+Using childprocess 4.1.0
+Using method_source 1.0.0
+Using thor 1.2.1
+Using io-console 0.5.11
+Using pg 1.4.4
+Fetching zeitwerk 2.6.4
+Using rexml 3.2.5
+Using rubyzip 2.3.2
+Using websocket 1.2.9
+Using i18n 1.12.0
+Using tzinfo 2.0.5
+Using rack-test 2.0.2
+Using sprockets 4.1.1
+Using puma 5.6.5
+Using websocket-driver 0.7.5
+Using mail 2.7.1
+Using net-protocol 0.1.3
+Using addressable 2.8.1
+Using bootsnap 1.13.0
+Using nokogiri 1.13.9
+Using reline 0.3.1
+Using selenium-webdriver 4.5.0
+Using activesupport 7.0.4
+Using net-imap 0.3.1
+Using net-pop 0.1.2
+Fetching net-smtp 0.3.3
+Using loofah 2.19.0
+Using xpath 3.2.0
+Using irb 1.4.2
+Using webdrivers 5.2.0
+Using rails-dom-testing 2.0.3
+Using globalid 1.0.0
+Using activemodel 7.0.4
+Using rails-html-sanitizer 1.4.3
+Using capybara 3.37.1
+Fetching debug 1.6.3
+Using activejob 7.0.4
+Using activerecord 7.0.4
+Using actionview 7.0.4
+Using actionpack 7.0.4
+Using jbuilder 2.11.5
+Using actioncable 7.0.4
+Using activestorage 7.0.4
+Using sprockets-rails 3.4.2
+Using actiontext 7.0.4
+Installing zeitwerk 2.6.4
+Installing debug 1.6.3 with native extensions
+Using railties 7.0.4
+Using importmap-rails 1.1.5
+Fetching cssbundling-rails 1.1.1
+Fetching jsbundling-rails 1.0.3
+Fetching stimulus-rails 1.1.1
+Using web-console 4.2.0
+Fetching turbo-rails 1.3.2
+Installing cssbundling-rails 1.1.1
+Installing jsbundling-rails 1.0.3
+Installing stimulus-rails 1.1.1
+Installing turbo-rails 1.3.2
+Installing net-smtp 0.3.3
+Using actionmailbox 7.0.4
+Using actionmailer 7.0.4
+Using rails 7.0.4
+Bundle complete! 17 Gemfile dependencies, 75 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+Se agrega la gem "faker" en el Gemfile
+Se ejecuta bundle install
+Se revisa si está la gema faker:
+
+csantana@Carlos-ASUS:~/ruby/m6d1$ bundle info faker
+  * faker (3.4.2)
+        Summary: Easily generate fake data
+        Homepage: https://github.com/faker-ruby/faker
+        Documentation: https://rubydoc.info/github/faker-ruby/faker
+        Source Code: https://github.com/faker-ruby/faker
+        Changelog: https://github.com/faker-ruby/faker/blob/main/CHANGELOG.md
+        Bug Tracker: https://github.com/faker-ruby/faker/issues
+        Path: /home/csantana/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/faker-3.4.2
+csantana@Carlos-ASUS:~/ruby/m6d1$
+
+3. Se actualiza archivo database.yml
+4. Se crea la base de datos
+5. Se hace la migración
+6. Se ingresan datos a la db
+
+

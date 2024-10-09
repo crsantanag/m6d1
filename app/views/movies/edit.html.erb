@@ -1,0 +1,13 @@
+<% content_for :title, "Editing movie" %>
+<br>
+<h1>Película en modo edición</h1>
+<br>
+
+<%= render "form", movie: @movie, clients: @clients %>
+
+<br>
+
+<div class="d-flex align-items-center">
+  <%= link_to "Regresar", movies_path,  class: "p-2 mr-2 btn btn-light border" %>
+  <%= link_to "Ver",      @movie,       class: "p-2 mx-2 btn btn-success" %>
+</div>

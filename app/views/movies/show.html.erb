@@ -1,0 +1,51 @@
+
+<%= render "shared/navbar_movie" %>
+
+  <div class="text-left">
+
+    <div class="text-left border rounded-2">
+
+      <div class="row pt-2 mx-1 mx-md-2">
+        <div class="col-2">
+          Id
+        </div>
+        <div class="col-1">
+          <%= @movie.id %>
+        </div>
+      </div>
+
+      <div class="row mx-1 mx-md-2">
+        <div class="col-2">
+          Nombre
+        </div>
+        <div class="col-6">
+          <%= @movie.name %>
+        </div>
+      </div>
+
+      <div class="row pb-2 mx-1 mx-md-2">
+        <div class="col-2">
+          Cliente
+        </div>
+        <div class="col-6">
+          <%= @movie.client_id %> <%= @movie.client.present? ? " - " + @movie.client.name : "Sin arrendar" %> </td>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="py-3 mx-1 mx-md-2">
+      <% if @poster_url.present? %>
+        <img src="<%= @poster_url %>" alt="Carátula de la película">
+      <% else %>
+        <p>No se encontró la carátula de la película</p>
+      <% end %>
+    </div>
+
+    <div class="d-flex align-items-center pt-1 mx-1 mx-md-2">
+      <%= link_to   "Regresar", movies_path,              class: "col-3 col-md-1 py-2 mr-3 btn btn-light border" %>
+      <%= link_to   "Editar",   edit_movie_path(@movie),  class: "col-3 col-md-1 py-2 mx-2 btn btn-success" %>
+      <%= button_to "Eliminar", @movie, method: :delete,  data: { confirm: "¿Estás seguro?" }, class: "py-2 btn btn-danger", style:"width: 120px" %>
+    </div>
+
+  </div>
