@@ -38,14 +38,23 @@
         <%= @client.movies.last %>
       </div>
     </div>
-  
   </div>
+
+  <div class="py-2 mx-1 mx-md-2">
+    <% if @poster_url.present? %>
+      <img src="<%= @poster_url %>" alt="Carátula de la película">
+    <% end %>
+  </div>
+
+  
   <br>
 
   <div class="d-flex align-items-center">
     <%= link_to   "Regresar", clients_path,              class: "col-3 col-md-1 py-2 mr-3 btn btn-light border" %>
-    <%= link_to   "Editar",   edit_client_path(@client), class: "col-3 col-md-1 py-2 mx-2 btn btn-success" %>
+    <%= link_to   "Editar",   edit_client_path(@client), class: "col-3 col-md-1 py-2 mx-2 btn btn-primary" %>
     <%= button_to "Eliminar", @client, method: :delete, data: { confirm: "¿Estás seguro?" }, class: "col-3 col-md-1 py-2 btn btn-danger", style:"width: 120px" %>
   </div>
 
+  <br>
+  <br>
 </div>

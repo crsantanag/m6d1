@@ -1,6 +1,6 @@
 <% if notice %>
     <p class="my-3">
-        <span class="d-block p-2 text-bg-success"> 
+        <span class="d-block p-2 text-bg-primary"> 
             <%= notice %> 
         </span>
     </p>
@@ -15,15 +15,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <%= link_to "Listar", clients_path, class: "col-3 col-md-12 btn btn-success" %>
+                    <%= link_to "Listar", clients_path, class: "col-3 col-md-12 btn btn-primary" %>
                 </li>
                 <li class="nav-item px-2">
-                    <%= link_to "Crear ", new_client_path, class: "col-3 col-md-12 btn btn-success" %>
+                    <%= link_to "Crear ", new_client_path, class: "col-3 col-md-12 btn btn-primary" %>
                 </li>
             </ul>
             <%= form_with url: search_clients_path, method: :get, class: "d-flex", role: "search" do |form| %>
                 <%= form.text_field :query_text, value: params[:query_text], class: "form-control me-2", placeholder: "Buscar", aria: { label: "Search" } %>
-                <%= form.submit "Buscar", class: "btn btn-outline-success" %>
+                <%= form.submit "Buscar", class: "btn btn-outline-primary" %>
             <% end %>
         </div>
     </div>

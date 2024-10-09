@@ -1,7 +1,7 @@
 class ClientsController < ApplicationController
   include Pagy::Backend
   before_action :set_client, only: %i[ show edit update destroy ]
-
+  
   # GET /clients or /clients.json
   def index
     # @clients = Client.all
@@ -10,6 +10,23 @@ class ClientsController < ApplicationController
 
   # GET /clients/1 or /clients/1.json
   def show
+    @client = Client.find(params[:id]) 
+
+    if @client.movies.any?
+      movie_title = @client.movies.last.name
+    
+      api_key = Rails.application.credentials.omdb[:api_key]
+    
+      # Crea una instancia del servicio y busca la película
+      movie_service = MovieApiService.new(api_key)
+      @poster_url = movie_service.fetch_movie_poster(movie_title)
+
+      if @poster_url.nil?
+        flash[:error] = "Película no encontrada"
+      end
+    else
+      @poster_url=nil
+    end
   end
 
   def search

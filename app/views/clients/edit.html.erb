@@ -1,7 +1,6 @@
 <% content_for :title, "Editing client" %>
-<br>
-<h1>Cliente en modo edición</h1>
-<br>
+
+<%= render "shared/navbar_client" %>
 
 <%= render "form", client: @client %>
 
@@ -9,5 +8,5 @@
 
 <div class="d-flex align-items-center">
   <%= link_to "Regresar", clients_path,  class: "col-1 p-2 mr-2 btn btn-light border" %>
-  <%= link_to "Ver",      @client,       class: "col-1 p-2 mx-2 btn btn-success" %>
+  <%= link_to "Ver",      @client,       class: "col-1 p-2 mx-2 btn btn-primary" %>
 </div>

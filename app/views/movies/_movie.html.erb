@@ -4,6 +4,6 @@
     <th class="text-start" scope="row"> <%= movie.id %> </th>
     <td class="text-start"> <%= movie.name %> </td>
     <td class="text-start"> <%= movie.client.present? ? movie.client.name : "Sin arrendar" %> </td>
-    <td><div class="d-flex justify-content-center"> <%= link_to "Ver", movie, class: "col-8 btn btn-success" %> </div></td>
+    <td><div class="d-flex justify-content-center"> <%= link_to "Ver", movie, class: "col-8 btn btn-primary" %> </div></td>
   </tr>
 </div>
