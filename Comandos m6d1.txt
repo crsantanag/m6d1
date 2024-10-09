@@ -111,6 +111,6 @@ csantana@Carlos-ASUS:~/ruby/m6d1$
 3. Se actualiza archivo database.yml
 4. Se crea la base de datos
 5. Se hace la migración
-6. Se ingresan datos a la db
+6. Se ingresan datos a la db con seed
 
 

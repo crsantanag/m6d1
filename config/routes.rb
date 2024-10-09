@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'pages/index'
     # Defines the root path route ("/")
-  root "clients#index"
+  root "pages#index"
 
   resources :movies do
     # Agrego ruta search
