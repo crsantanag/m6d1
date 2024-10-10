@@ -8,10 +8,16 @@ default: &default
 development:
   <<: *default
   database: m6d1
+  
+  username:
+  password:
+  host:
+  port:
 
 test:
   <<: *default
   database: m6d1_test
+
 
 production:
   <<: *default

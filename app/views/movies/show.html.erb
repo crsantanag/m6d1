@@ -28,7 +28,7 @@
           Cliente
         </div>
         <div class="col-6">
-          <%= @movie.client.present? ? " - " + @movie.client.name : "Sin arrendar" %> </td>
+          <%= @movie.client.present? ? @movie.client.name : "Sin arrendar" %> </td>
         </div>
       </div>
 
