@@ -8,7 +8,7 @@ Ruby on Rails - postgresql
 ## Descripción
 
 Esta aplicación realiza el proceso de arriendo de video (o de cualquier artículo).  
-Se simula el sistema de registros de arriendos, tomando en cuenta el hipotético caso de que una película puede ser arrendada por más de un cliente y el cliente solo puede arrendar una película a la vez.
+Se simula el sistema de registros de arriendos, tomando en cuenta el hipotético caso de que una película puede ser arrendada por más de un cliente y el cliente solo puede arrendar una película a la vez.  
 Nota: Es importante destacar que este es un caso hipotético, en un caso real podría darse una relación de muchos a muchos entre las entidades de Película y Cliente.
 
 ## Inicio
@@ -24,7 +24,7 @@ Este proyecto fue desarrollado con Rails - versión 7 y PostgreSQL - versión 16
 Sigue estos pasos para ejecutar el proyecto localmente:
 
 1. Clona este repositorio en tu máquina local.  
-git clone https://github.com/crsantanag/m5d5.git
+git clone https://github.com/crsantanag/m6d1.git
 
 2. Navega hasta el directorio del proyecto.  
 cd m6d1
